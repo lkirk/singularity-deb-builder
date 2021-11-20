@@ -190,5 +190,5 @@ diff --git a/files_before.txt b/files_after_uninstall.txt
 +/opt/files_after_uninstall.txt
 +/opt/files_after.txt
  /opt/files_before.txt
- /opt/files_before_after_uninstall_diff.txt
- /opt/files_before_after_diff.txt
+ /opt/files_before_after_uninstall_diff.diff
+ /opt/files_before_after.diff

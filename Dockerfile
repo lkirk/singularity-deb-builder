@@ -21,8 +21,8 @@ RUN \
     rm -r tmp/usr/lib/.build-id; \
     dpkg-deb -b tmp singularity_3.8.4-2_amd64_final.deb
 
-ADD files_before_after_diff.txt .
-ADD files_before_after_uninstall_diff.txt .
+ADD files_before_after.diff .
+ADD files_before_after_uninstall_diff.diff .
 
 RUN \
     set -ex; \
@@ -36,5 +36,5 @@ RUN \
     set -ex; \
     git diff --no-index files_before.txt files_after.txt | grep -v '^index ' > install_diff.txt; \
     git diff --no-index files_before.txt files_after_uninstall.txt | grep -v '^index ' > uninstall_diff.txt; \
-    diff files_before_after_diff.txt install_diff.txt; \
-    diff files_before_after_uninstall_diff.txt uninstall_diff.txt
+    diff files_before_after.diff install_diff.txt; \
+    diff files_before_after_uninstall_diff.diff uninstall_diff.txt
