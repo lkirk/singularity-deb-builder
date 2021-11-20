@@ -1,9 +1,6 @@
 name: Publish Deb to Github
 
-on:
-  push:
-    tags:
-      - '*'
+on: push
 
 jobs:
   docker:
