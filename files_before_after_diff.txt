@@ -1,0 +1,368 @@
+diff --git a/files_before.txt b/files_after.txt
+--- a/files_before.txt
++++ b/files_after.txt
+@@ -2732,6 +2732,8 @@
+ /usr/bin/dpkg
+ /usr/bin/groups
+ /usr/bin/[
++/usr/bin/run-singularity
++/usr/bin/singularity
+ /usr/bin/envsubst
+ /usr/bin/x86_64-linux-gnu-addr2line
+ /usr/bin/colcrt
+@@ -5232,6 +5234,9 @@
+ /usr/share/doc/dpkg/rootless-builds.txt.gz
+ /usr/share/doc/dpkg/triggers.txt.gz
+ /usr/share/doc/dpkg/protected-field.txt
++/usr/share/doc/singularity
++/usr/share/doc/singularity/copyright
++/usr/share/doc/singularity/changelog.Debian.gz
+ /usr/share/doc/bzip2
+ /usr/share/doc/bzip2/changelog.gz
+ /usr/share/doc/bzip2/copyright
+@@ -9833,6 +9838,89 @@
+ /usr/share/man/man1/basename.1.gz
+ /usr/share/man/man1/fmt.1.gz
+ /usr/share/man/man1/dpkg-split.1.gz
++/usr/share/man/man1/singularity-plugin-install.1.gz
++/usr/share/man/man1/singularity-instance-start.1.gz
++/usr/share/man/man1/singularity-config.1.gz
++/usr/share/man/man1/singularity-oci-delete.1.gz
++/usr/share/man/man1/singularity-oci.1.gz
++/usr/share/man/man1/singularity-instance-list.1.gz
++/usr/share/man/man1/singularity-config-global.1.gz
++/usr/share/man/man1/singularity-shell.1.gz
++/usr/share/man/man1/singularity-key-newpair.1.gz
++/usr/share/man/man1/singularity-remote-remove-keyserver.1.gz
++/usr/share/man/man1/singularity-config-fakeroot.1.gz
++/usr/share/man/man1/singularity-key.1.gz
++/usr/share/man/man1/singularity-inspect.1.gz
++/usr/share/man/man1/singularity-sif-list.1.gz
++/usr/share/man/man1/singularity-remote-add.1.gz
++/usr/share/man/man1/singularity-capability-add.1.gz
++/usr/share/man/man1/singularity-cache-clean.1.gz
++/usr/share/man/man1/singularity.1.gz
++/usr/share/man/man1/singularity-remote-add-keyserver.1.gz
++/usr/share/man/man1/singularity-capability-drop.1.gz
++/usr/share/man/man1/singularity-remote-logout.1.gz
++/usr/share/man/man1/singularity-sif-info.1.gz
++/usr/share/man/man1/singularity-test.1.gz
++/usr/share/man/man1/singularity-capability-list.1.gz
++/usr/share/man/man1/singularity-push.1.gz
++/usr/share/man/man1/singularity-key-list.1.gz
++/usr/share/man/man1/singularity-remote-use.1.gz
++/usr/share/man/man1/singularity-key-pull.1.gz
++/usr/share/man/man1/singularity-instance.1.gz
++/usr/share/man/man1/singularity-key-push.1.gz
++/usr/share/man/man1/singularity-sif.1.gz
++/usr/share/man/man1/singularity-remote-list.1.gz
++/usr/share/man/man1/singularity-build.1.gz
++/usr/share/man/man1/singularity-key-import.1.gz
++/usr/share/man/man1/singularity-version.1.gz
++/usr/share/man/man1/singularity-oci-start.1.gz
++/usr/share/man/man1/singularity-cache-list.1.gz
++/usr/share/man/man1/singularity-sif-header.1.gz
++/usr/share/man/man1/singularity-pull.1.gz
++/usr/share/man/man1/singularity-plugin-list.1.gz
++/usr/share/man/man1/singularity-key-export.1.gz
++/usr/share/man/man1/singularity-plugin.1.gz
++/usr/share/man/man1/singularity-plugin-compile.1.gz
++/usr/share/man/man1/singularity-plugin-inspect.1.gz
++/usr/share/man/man1/singularity-sif-add.1.gz
++/usr/share/man/man1/singularity-remote-remove.1.gz
++/usr/share/man/man1/singularity-capability.1.gz
++/usr/share/man/man1/singularity-oci-create.1.gz
++/usr/share/man/man1/singularity-sif-new.1.gz
++/usr/share/man/man1/singularity-run-help.1.gz
++/usr/share/man/man1/singularity-exec.1.gz
++/usr/share/man/man1/singularity-oci-umount.1.gz
++/usr/share/man/man1/singularity-search.1.gz
++/usr/share/man/man1/singularity-oci-resume.1.gz
++/usr/share/man/man1/singularity-plugin-create.1.gz
++/usr/share/man/man1/singularity-key-search.1.gz
++/usr/share/man/man1/singularity-oci-exec.1.gz
++/usr/share/man/man1/singularity-sif-setprim.1.gz
++/usr/share/man/man1/singularity-run.1.gz
++/usr/share/man/man1/singularity-oci-attach.1.gz
++/usr/share/man/man1/singularity-key-remove.1.gz
++/usr/share/man/man1/singularity-oci-pause.1.gz
++/usr/share/man/man1/singularity-oci-state.1.gz
++/usr/share/man/man1/singularity-oci-kill.1.gz
++/usr/share/man/man1/singularity-delete.1.gz
++/usr/share/man/man1/singularity-oci-run.1.gz
++/usr/share/man/man1/singularity-sif-del.1.gz
++/usr/share/man/man1/singularity-remote-status.1.gz
++/usr/share/man/man1/singularity-remote.1.gz
++/usr/share/man/man1/singularity-remote-login.1.gz
++/usr/share/man/man1/singularity-sign.1.gz
++/usr/share/man/man1/singularity-overlay-create.1.gz
++/usr/share/man/man1/singularity-plugin-disable.1.gz
++/usr/share/man/man1/singularity-sif-dump.1.gz
++/usr/share/man/man1/singularity-oci-update.1.gz
++/usr/share/man/man1/singularity-verify.1.gz
++/usr/share/man/man1/singularity-plugin-enable.1.gz
++/usr/share/man/man1/singularity-cache.1.gz
++/usr/share/man/man1/singularity-plugin-uninstall.1.gz
++/usr/share/man/man1/singularity-instance-stop.1.gz
++/usr/share/man/man1/singularity-overlay.1.gz
++/usr/share/man/man1/singularity-oci-mount.1.gz
++/usr/share/man/man1/singularity-capability-avail.1.gz
+ /usr/share/man/man1/ciphers.1ssl.gz
+ /usr/share/man/man1/git-whatchanged.1.gz
+ /usr/share/man/man1/xzcmp.1.gz
+@@ -13329,6 +13417,26 @@
+ /usr/libexec
+ /usr/libexec/coreutils
+ /usr/libexec/coreutils/libstdbuf.so
++/usr/libexec/singularity
++/usr/libexec/singularity/bin
++/usr/libexec/singularity/bin/starter
++/usr/libexec/singularity/bin/starter-suid
++/usr/libexec/singularity/cni
++/usr/libexec/singularity/cni/ptp
++/usr/libexec/singularity/cni/firewall
++/usr/libexec/singularity/cni/bandwidth
++/usr/libexec/singularity/cni/static
++/usr/libexec/singularity/cni/portmap
++/usr/libexec/singularity/cni/bridge
++/usr/libexec/singularity/cni/dhcp
++/usr/libexec/singularity/cni/host-local
++/usr/libexec/singularity/cni/macvlan
++/usr/libexec/singularity/cni/ipvlan
++/usr/libexec/singularity/cni/host-device
++/usr/libexec/singularity/cni/loopback
++/usr/libexec/singularity/cni/tuning
++/usr/libexec/singularity/cni/vlan
++/usr/libexec/singularity/cni/flannel
+ /usr/include
+ /usr/include/inttypes.h
+ /usr/include/stdlib.h
+@@ -15205,6 +15313,7 @@
+ /var/lib/pam/seen
+ /var/lib/apt
+ /var/lib/apt/lists
++/var/lib/apt/lists/auxfiles
+ /var/lib/apt/extended_states
+ /var/lib/apt/mirrors
+ /var/lib/apt/mirrors/partial
+@@ -15701,6 +15810,9 @@
+ /var/lib/dpkg/info/libk5crypto3:amd64.md5sums
+ /var/lib/dpkg/info/util-linux.postrm
+ /var/lib/dpkg/info/libssl1.1:amd64.shlibs
++/var/lib/dpkg/info/singularity.conffiles
++/var/lib/dpkg/info/singularity.list
++/var/lib/dpkg/info/singularity.md5sums
+ /var/lib/dpkg/info/perl-modules-5.32.list
+ /var/lib/dpkg/info/rpm.postrm
+ /var/lib/dpkg/info/libmagic1:amd64.md5sums
+@@ -16120,36 +16232,43 @@
+ /var/cache/man/ro/index.db
+ /var/cache/man/ro/cat5
+ /var/cache/man/ro/cat8
++/var/cache/man/ro/CACHEDIR.TAG
+ /var/cache/man/fi
+ /var/cache/man/fi/cat1
+ /var/cache/man/fi/index.db
++/var/cache/man/fi/CACHEDIR.TAG
+ /var/cache/man/pt
+ /var/cache/man/pt/cat1
+ /var/cache/man/pt/cat7
+ /var/cache/man/pt/index.db
+ /var/cache/man/pt/cat5
+ /var/cache/man/pt/cat8
++/var/cache/man/pt/CACHEDIR.TAG
+ /var/cache/man/cs
+ /var/cache/man/cs/cat1
+ /var/cache/man/cs/index.db
+ /var/cache/man/cs/cat5
+ /var/cache/man/cs/cat8
++/var/cache/man/cs/CACHEDIR.TAG
+ /var/cache/man/ru
+ /var/cache/man/ru/cat1
+ /var/cache/man/ru/cat7
+ /var/cache/man/ru/index.db
+ /var/cache/man/ru/cat5
+ /var/cache/man/ru/cat8
++/var/cache/man/ru/CACHEDIR.TAG
+ /var/cache/man/vi
+ /var/cache/man/vi/cat1
+ /var/cache/man/vi/cat7
+ /var/cache/man/vi/index.db
++/var/cache/man/vi/CACHEDIR.TAG
+ /var/cache/man/nl
+ /var/cache/man/nl/cat1
+ /var/cache/man/nl/cat7
+ /var/cache/man/nl/index.db
+ /var/cache/man/nl/cat5
+ /var/cache/man/nl/cat8
++/var/cache/man/nl/CACHEDIR.TAG
+ /var/cache/man/cat1
+ /var/cache/man/fr
+ /var/cache/man/fr/cat1
+@@ -16157,64 +16276,76 @@
+ /var/cache/man/fr/index.db
+ /var/cache/man/fr/cat5
+ /var/cache/man/fr/cat8
++/var/cache/man/fr/CACHEDIR.TAG
+ /var/cache/man/hu
+ /var/cache/man/hu/cat1
+ /var/cache/man/hu/index.db
+ /var/cache/man/hu/cat5
+ /var/cache/man/hu/cat8
++/var/cache/man/hu/CACHEDIR.TAG
+ /var/cache/man/de
+ /var/cache/man/de/cat1
+ /var/cache/man/de/cat7
+ /var/cache/man/de/index.db
+ /var/cache/man/de/cat5
+ /var/cache/man/de/cat8
++/var/cache/man/de/CACHEDIR.TAG
+ /var/cache/man/cat7
+ /var/cache/man/it
+ /var/cache/man/it/cat1
+ /var/cache/man/it/index.db
+ /var/cache/man/it/cat5
+ /var/cache/man/it/cat8
++/var/cache/man/it/CACHEDIR.TAG
+ /var/cache/man/sv
+ /var/cache/man/sv/cat1
+ /var/cache/man/sv/index.db
+ /var/cache/man/sv/cat5
+ /var/cache/man/sv/cat8
++/var/cache/man/sv/CACHEDIR.TAG
+ /var/cache/man/es
+ /var/cache/man/es/cat1
+ /var/cache/man/es/cat7
+ /var/cache/man/es/index.db
+ /var/cache/man/es/cat5
+ /var/cache/man/es/cat8
++/var/cache/man/es/CACHEDIR.TAG
+ /var/cache/man/index.db
+ /var/cache/man/pl
+ /var/cache/man/pl/cat1
+ /var/cache/man/pl/index.db
+ /var/cache/man/pl/cat5
+ /var/cache/man/pl/cat8
++/var/cache/man/pl/CACHEDIR.TAG
+ /var/cache/man/sl
+ /var/cache/man/sl/cat1
+ /var/cache/man/sl/index.db
+ /var/cache/man/sl/cat8
++/var/cache/man/sl/CACHEDIR.TAG
+ /var/cache/man/id
+ /var/cache/man/id/cat1
+ /var/cache/man/id/index.db
+ /var/cache/man/id/cat5
+ /var/cache/man/id/cat8
++/var/cache/man/id/CACHEDIR.TAG
+ /var/cache/man/da
+ /var/cache/man/da/cat1
+ /var/cache/man/da/index.db
+ /var/cache/man/da/cat5
+ /var/cache/man/da/cat8
++/var/cache/man/da/CACHEDIR.TAG
+ /var/cache/man/zh_CN
+ /var/cache/man/zh_CN/cat1
+ /var/cache/man/zh_CN/index.db
+ /var/cache/man/zh_CN/cat5
+ /var/cache/man/zh_CN/cat8
++/var/cache/man/zh_CN/CACHEDIR.TAG
+ /var/cache/man/tr
+ /var/cache/man/tr/cat1
+ /var/cache/man/tr/index.db
+ /var/cache/man/tr/cat5
+ /var/cache/man/tr/cat8
++/var/cache/man/tr/CACHEDIR.TAG
+ /var/cache/man/cat5
+ /var/cache/man/ja
+ /var/cache/man/ja/cat1
+@@ -16222,12 +16353,14 @@
+ /var/cache/man/ja/index.db
+ /var/cache/man/ja/cat5
+ /var/cache/man/ja/cat8
++/var/cache/man/ja/CACHEDIR.TAG
+ /var/cache/man/cat3
+ /var/cache/man/ko
+ /var/cache/man/ko/cat1
+ /var/cache/man/ko/index.db
+ /var/cache/man/ko/cat5
+ /var/cache/man/ko/cat8
++/var/cache/man/ko/CACHEDIR.TAG
+ /var/cache/man/cat8
+ /var/cache/man/CACHEDIR.TAG
+ /var/cache/man/sr
+@@ -16235,16 +16368,19 @@
+ /var/cache/man/sr/index.db
+ /var/cache/man/sr/cat5
+ /var/cache/man/sr/cat8
++/var/cache/man/sr/CACHEDIR.TAG
+ /var/cache/man/zh_TW
+ /var/cache/man/zh_TW/cat1
+ /var/cache/man/zh_TW/index.db
+ /var/cache/man/zh_TW/cat5
+ /var/cache/man/zh_TW/cat8
++/var/cache/man/zh_TW/CACHEDIR.TAG
+ /var/cache/man/pt_BR
+ /var/cache/man/pt_BR/cat1
+ /var/cache/man/pt_BR/index.db
+ /var/cache/man/pt_BR/cat5
+ /var/cache/man/pt_BR/cat8
++/var/cache/man/pt_BR/CACHEDIR.TAG
+ /var/spool
+ /var/spool/mail
+ /var/tmp
+@@ -16264,6 +16400,9 @@
+ /var/log/wtmp
+ /var/log/dpkg.log
+ /var/log/alternatives.log
++/var/singularity
++/var/singularity/mnt
++/var/singularity/mnt/session
+ /tmp
+ /media
+ /root
+@@ -16520,6 +16659,27 @@
+ /etc/dpkg/dpkg.cfg
+ /etc/dpkg/shlibs.override
+ /etc/dpkg/shlibs.default
++/etc/bash_completion.d
++/etc/bash_completion.d/git-prompt
++/etc/bash_completion.d/singularity
++/etc/singularity
++/etc/singularity/network
++/etc/singularity/network/40_fakeroot.conflist
++/etc/singularity/network/30_macvlan.conflist
++/etc/singularity/network/10_ptp.conflist
++/etc/singularity/network/20_ipvlan.conflist
++/etc/singularity/network/00_bridge.conflist
++/etc/singularity/remote.yaml
++/etc/singularity/ecl.toml
++/etc/singularity/capability.json
++/etc/singularity/global-pgp-public
++/etc/singularity/seccomp-profiles
++/etc/singularity/seccomp-profiles/default.json
++/etc/singularity/cgroups
++/etc/singularity/cgroups/cgroups.toml
++/etc/singularity/nvliblist.conf
++/etc/singularity/rocmliblist.conf
++/etc/singularity/singularity.conf
+ /etc/hosts
+ /etc/mtab
+ /etc/magic
+@@ -16807,8 +16967,6 @@
+ /etc/perl
+ /etc/perl/Net
+ /etc/perl/Net/libnet.cfg
+-/etc/bash_completion.d
+-/etc/bash_completion.d/git-prompt
+ /sys
+ /sys/kernel
+ /sys/kernel/notes
+@@ -58033,6 +58191,7 @@
+ /sys/module/drm/sections/.rodata.str1.8
+ /sys/module/drm/sections/.ref.data
+ /opt
++/opt/files_after.txt
+ /opt/files_before.txt
+ /opt/files_before_after_uninstall_diff.txt
+ /opt/files_before_after_diff.txt
